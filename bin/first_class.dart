@@ -4,10 +4,13 @@ enum EnumName {buy,sell,outOf}
 
 void main(List<String> arguments) {
   // print('Hello world: ${first_class.calculate()}!');
+//hi 
 
+//  git commit -m "first pro"
+//  git push -u origin main
 
   // print("mahsa");
-  // Todo: create file
+  // To////do: create file
   // int a = 10;
   // double b = 10.4;
   // String s = "masha";
