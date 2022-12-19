@@ -94,6 +94,10 @@ int ? ab;
 ///it never can be null
 // print( ab! );
 
+///print test
+ print('test');
+ print('test1');
+
 
 
 
