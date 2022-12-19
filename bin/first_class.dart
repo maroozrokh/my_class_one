@@ -1,6 +1,7 @@
 import 'package:first_class/first_class.dart' as first_class;
 ///enum are stable
 enum EnumName {buy,sell,outOf}
+enum Enum1 {buy,sell,outOf}
 
 void main(List<String> arguments) {
   // print('Hello world: ${first_class.calculate()}!');
@@ -55,15 +56,15 @@ void main(List<String> arguments) {
    
   // });
 
-    List list1 = [1,2,3];
-    List list2 = [4,5,6];
-    List list3 = [7,8,9];
-    list1.addAll(list2);   
-    List t1 = [...list2,...list3,...list1];
+    // List list1 = [1,2,3];
+    // List list2 = [4,5,6];
+    // List list3 = [7,8,9];
+    // list1.addAll(list2);   
+    // List t1 = [...list2,...list3,...list1];
    
 
-List myL = [1,2,3];
-bool aa = myL.any((element) => element == 2);
+// List myL = [1,2,3];
+// bool aa = myL.any((element) => element == 2);
     // t1.add(20);
     // myL.map((e) =>e ).toList();
     // myL.toSet().toList();
@@ -71,17 +72,17 @@ bool aa = myL.any((element) => element == 2);
     // list3.take(1);
 
 //casecade in dart
-    t1 
-    ..add(12)
-    ..add(145)
-    ..add(135);
+    // t1 
+    // ..add(12)
+    // ..add(145)
+    // ..add(135);
 
-var as ;
+// var as ;
 // print(as ?? 0);
 // a == null ? 0:null;
 
 ///? can be null
-int ? ab;
+// int ? ab;
 
 // for(var i in t1){
       //  print(t1);
@@ -149,32 +150,135 @@ int ? ab;
   
 //    'm' ,
 //   List.generate(3, (j) => ' j ')});
-//   var m2 = List.generate(3, (i) => List.generate(3, (j) => i + j));
+  // var m2 = List.generate(3, (i) => List.generate(3, (j) => i + j));
 
   //  print(student);
   //  print(m1.toList( growable: true));
-  //  print(m1);
+  //  print(m2);
 
 
- List names = ["mahsa","ali","sahar"];
- List grades = [1,2,3];
- List lessons = ['math','chemistry','history'];
+//  List names = ["mahsa","ali","sahar"];
+//  List grades = [1,2,3];
+//  List lessons = ['math','chemistry','history'];
 
 
-
-var total_list =  List.generate(names.length, (i) => {   
-    names[i],
-    List.generate(names.length, (j) => {
-      j = i,
-     grades[j]
+// var total_list =  List.generate(names.length, (i) => {   
+  // names[i]
+//     List.generate(grades.length, (j) => {
+      
+//        grades[j]
     
-    }
+//     }
   
-  )});
+//   )});
+
+// print(total_list);
+
+//// a is String
+///// int.parese
+/////~ => return number as int in divide operation
+/// 3 ~/ 2
+
+int a = 2;
 
 
-print(total_list);
+
+
+//  print(myMap.values);
+
+
+//   print(Enum1.values);
+ 
+// for(var i in Enum1.values){
+//   print(i);
+
+// }
+
+// for(var i in myMap.values){
+//   if(myMap['age'] == '23'){
+    
+//   }
+//   print(i);
+
+// }
+
+// a.runtimeType
+List numbers = [1, 2, 6, 7];
+Map myMap = {'name' : 'mahsa' , 'age' : '23'};
+
+// numbers.forEach(print);
+// myMap.forEach((key,value){
+
+//   if(value == 'mahsa'){
+//     print('hello ${value}');
+//   }
+//   if(key == 'age'){
+//    print('hello ${value} your age is ${value}');
+
+//   }
+
+// });
+
+
+List<Map> students = [{'name' : 'mahsa' , 'age' : '23'},{'name' : 'ali' , 'age' : '23'}];
+
+
+// for(int i = 0 ; i<students.length ; i++){
+    
+
+// }
+
+
+// for (var i in students) {
+  
+  // print(i);
+    // i.forEach((key, value) { 
+      // print(i.values);
+      // if(i.values == 'ali' && i.values == '23'){
+      //    print('hello ');
+      // }
+    
+    // }else{
+    //   print('you are not recognized');
+      
+    // }
+  // });
+
 }
+
+// final firstMap = {"1":"2"};
+// final secondMap = {"2":"3"};
+
+// final thirdMap = {
+//    ...firstMap,
+//    ...secondMap,
+// };
+
+
+//function default return dynamic
+//  function1('a ', name: 'mahsa');
+
+// }
+
+function(String a , {String? name}){
+  return '';
+
+
+}
+
+// var m1 = ()=>{
+
+// }
+
+function1(String a , {required String  name}){
+  return '';
+
+
+}
+
+
+
+
 
 
 
