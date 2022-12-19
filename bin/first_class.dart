@@ -1,4 +1,10 @@
+// import 'dart:html_common';
+
 import 'package:first_class/first_class.dart' as first_class;
+
+import 'super_class.dart';
+
+
 ///enum are stable
 enum EnumName {buy,sell,outOf}
 enum Enum1 {buy,sell,outOf}
@@ -179,7 +185,7 @@ void main(List<String> arguments) {
 /////~ => return number as int in divide operation
 /// 3 ~/ 2
 
-int a = 2;
+// int a = 2;
 
 
 
@@ -203,8 +209,8 @@ int a = 2;
 // }
 
 // a.runtimeType
-List numbers = [1, 2, 6, 7];
-Map myMap = {'name' : 'mahsa' , 'age' : '23'};
+// List numbers = [1, 2, 6, 7];
+// Map myMap = {'name' : 'mahsa' , 'age' : '23'};
 
 // numbers.forEach(print);
 // myMap.forEach((key,value){
@@ -220,7 +226,7 @@ Map myMap = {'name' : 'mahsa' , 'age' : '23'};
 // });
 
 
-List<Map> students = [{'name' : 'mahsa' , 'age' : '23'},{'name' : 'ali' , 'age' : '23'}];
+// List<Map> students = [{'name' : 'mahsa' , 'age' : '23'},{'name' : 'ali' , 'age' : '23'}];
 
 
 // for(int i = 0 ; i<students.length ; i++){
@@ -244,6 +250,18 @@ List<Map> students = [{'name' : 'mahsa' , 'age' : '23'},{'name' : 'ali' , 'age' 
     // }
   // });
 
+
+
+// SuperClass superClass = SuperClass();
+// print(superClass.name);
+
+SuperClass superClass = SuperClass();
+// superClass.setAge = 23;
+// superClass.age = 10;
+// print(superClass.age);
+
+
+
 }
 
 // final firstMap = {"1":"2"};
@@ -260,21 +278,21 @@ List<Map> students = [{'name' : 'mahsa' , 'age' : '23'},{'name' : 'ali' , 'age' 
 
 // }
 
-function(String a , {String? name}){
-  return '';
+// function(String a , {String? name}){
+//   return '';
 
 
-}
+// }
 
 // var m1 = ()=>{
 
 // }
 
-function1(String a , {required String  name}){
-  return '';
+// function1(String a , {required String  name}){
+//   return '';
 
 
-}
+// }
 
 
 
