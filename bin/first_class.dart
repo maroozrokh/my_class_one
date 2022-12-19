@@ -77,7 +77,7 @@ bool aa = myL.any((element) => element == 2);
     ..add(135);
 
 var as ;
-print(as ?? 0);
+// print(as ?? 0);
 // a == null ? 0:null;
 
 ///? can be null
@@ -95,12 +95,87 @@ int ? ab;
 // print( ab! );
 
 ///print test
- print('test');
- print('test1');
+//  print('test');
+//  print('test1');
+
+    // int a = 3;
+    // int b = 3;
+ 
+  // List names = ["mahsa","ali","sahar"];
+  // List nomreh = [1,2,3];
+  // Map names_all = {'naem1': 'mahsa','naem2': 'ali'};
+  // Map grades = {'g1': '12','g2': '13'};
+
+  // print(grades.values);
+    // Creating two dimensional list
+  //  var student = List.generate(1, (i) =>{ 
+  //   names,
+  //   List.generate(1, (j) =>nomreh)
+  //   });
+
+//////
+//  int a = 3;
+//     int b = 3;
+ 
+    // //Creating two dimensional list
+    // var gfg = List.generate(a, (i) = > List(b), growable: false);
+ 
+    // Printing its value
+    // print(gfg);
+ 
+    //// Inserting values
+    // for (int i = 0; i < 3; ++i) {
+    //     for (int j = 0; j < 3; ++j) {
+    //         gfg[i][j] = i + j;
+    //     }
+    // }
+    // /// //Printing its value
+    // print(gfg);
+
+    //////
+
+
+// var m =  List.generate(3, (i) => { 
+  
+//   i = 0,
+  
+//   List.generate(3, (j) => i + j)});
 
 
 
 
+
+// var m1 =  List.generate(3, (i) =>{ 
+  
+//    'm' ,
+//   List.generate(3, (j) => ' j ')});
+//   var m2 = List.generate(3, (i) => List.generate(3, (j) => i + j));
+
+  //  print(student);
+  //  print(m1.toList( growable: true));
+  //  print(m1);
+
+
+ List names = ["mahsa","ali","sahar"];
+ List grades = [1,2,3];
+ List lessons = ['math','chemistry','history'];
+
+
+
+var total_list =  List.generate(names.length, (i) => {   
+    names[i],
+    List.generate(names.length, (j) => {
+      j = i,
+     grades[j]
+    
+    }
+  
+  )});
+
+
+print(total_list);
 }
+
+
 
 
