@@ -25,13 +25,13 @@ class SuperClass {
 // int? age ;
 // String? name;
 // SuperClass({this.age}): name = 'mahsa'{
-
 // name = name ?? 'name is null';
-
 // }
 
  int? _age ;
  String? _name;
+
+
 // SuperClass(this._age,this._name);
 
 int get age {

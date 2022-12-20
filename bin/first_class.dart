@@ -2,7 +2,11 @@
 
 import 'package:first_class/first_class.dart' as first_class;
 
+
+import 'classes/aniamal.dart';
 import 'super_class.dart';
+import 'second_class.dart';
+import 'classes/question1.dart';
 
 
 ///enum are stable
@@ -10,6 +14,30 @@ enum EnumName {buy,sell,outOf}
 enum Enum1 {buy,sell,outOf}
 
 void main(List<String> arguments) {
+
+
+// Animal animal = Animal(name : 'hen');
+// print(animal.name);
+
+// Bird bird = Bird('kaftar');
+// print(bird);
+
+
+// Sparrow sparrow = Sparrow(name: 'sparrow');
+// print(sparrow.name);
+
+
+
+
+///////Q1
+  Map map22 = {'age' : 20 , 'id':123};
+  Map map11 = {};
+
+Mydata  mydata = Mydata(map11);
+print(mydata);
+   
+
+
   // print('Hello world: ${first_class.calculate()}!');
 //hi 
 
@@ -255,12 +283,14 @@ void main(List<String> arguments) {
 // SuperClass superClass = SuperClass();
 // print(superClass.name);
 
-SuperClass superClass = SuperClass();
+// SuperClass superClass = SuperClass();
 // superClass.setAge = 23;
 // superClass.age = 10;
 // print(superClass.age);
 
+//////second class
 
+    
 
 }
 
