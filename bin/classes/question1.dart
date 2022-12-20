@@ -1,43 +1,37 @@
 
-class Mydata {
-
-Map? map;
-Mydata(Map map22, {this.map});
-
-factory Mydata.factoryConst(Map<String,dynamic>? map){
+// class Mydata {
 
 
-        if(map == ''){
-
-            return(Emtpydata());
-        }else{
-          
-
-          return(Mydata(map!));
-        }
+// String? name;
+// String? id;
+// String? username;
 
 
+// Mydata({this.name,this.id,this.username});
 
+// factory Mydata.myData({Map<String,dynamic> json}){
+//   if(json?['name'] == null)
+// {
+//   return EmptyData.emdata(json : json);
+// }
+// }else{
+// return(Mydata.myData({Map<String,dynamic> json}));
 
-
-}
+// }
 
 
 
+// }
 
-}
+
+// class EmptyData{
+
+// factory EmptyData.emdata({Map<String,dynamic> json}){
+
+//   return EmptyData{
+
+//   }
 
 
-class Emtpydata extends Mydata{
-   
-  
-Map? map;
-Emtpydata({this.map});
 
-factory Emtpydata.factoryConst(Map map){
-
-     return(Emtpydata());
-}
-
-}
-
+// }
