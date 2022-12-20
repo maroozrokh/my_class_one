@@ -63,3 +63,25 @@ class Kapor extends Abzi{
 
 
 }
+
+////we do not have interface in dart abstract do it itself
+abstract class A{
+    void noBody();
+
+
+
+}
+class B{
+   external void noBody();
+}
+
+class C{}
+class D{}
+
+
+class E implements A,B,C,D{
+  @override
+  void noBody() {
+    // TODO: implement noBody
+  }
+}
