@@ -60,17 +60,20 @@ class Kapor extends Abzi{
   
 }
 
-
-
 }
 
 ////we do not have interface in dart abstract do it itself
+////methodes in abstract class with body or without body will override in other class
+////we can not create instance(object) from an abstract class and we have to implemented in other class like class E describe below
+
 abstract class A{
     void noBody();
 
 
 
 }
+
+////use abstract methode in a normal class we have to use external keyword befor method
 class B{
    external void noBody();
 }

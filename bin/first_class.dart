@@ -1,9 +1,12 @@
 // import 'package:first_class/first_class.dart' as first_class;
 import 'classes/aniamal.dart';
+import 'classes/my_extention.dart';
+import 'classes/new_animal.dart';
+import 'classes/question2.dart';
 import 'super_class.dart';
 import 'second_class.dart';
 import 'classes/question1.dart';
-
+import 'classes/my_extention.dart';
 
 ///enum are stable
 enum EnumName {buy,sell,outOf}
@@ -12,31 +15,47 @@ enum Enum1 {buy,sell,outOf}
 void main(List<String> arguments) {
 
 
-// Animal animal = Animal(name : 'hen');
-// print(animal.name);
-
-// Bird bird = Bird('kaftar');
-// print(bird);
-
-
-// Sparrow sparrow = Sparrow(name: 'sparrow');
-// print(sparrow.name);
 
 
 
 
-///////Q1
-  Map<String,dynamic> haveData = {'name' : 'mahsa' , 'userName': 'roozrokh','id':123};
-  Map<String,dynamic> noData = {'empty' : 'empty'};
+///////Q1  factory class
+  // Map<String,dynamic> haveData = {'name' : 'mahsa' , 'userName': 'roozrokh','id':123};
+  // Map<String,dynamic> noData = {'empty' : 'empty'};
+  // Data data = Data.myData(json : noData);
+  // print(data);
 
 
-Data data = Data.myData(json : noData);
-print(data);
+
+///////Abstrcat class
+// UniCorn uniCorn = UniCorn();
+// uniCorn.doingUniCorn();
+
+
+// Animals().doAll();
+// PrideParande().doAll();
+
+///////Extention
+
+// int a = 10 ;
+// String b = a.toString();
+// print(b.runtimeType);
+
+
+// MyInt myInt = MyInt(23);
+// print(myInt.fancyInt);
+// myInt.changeIntPlus5();
+
+10.changeIntPlus5();
+'flutter'.stringLenght();
+'10.3'.strToDouble();
+'10'.strToInt();
+List list = [12,12,34,456,67,87,98];
+list.listCheck();
    
 
 
-  // print('Hello world: ${first_class.calculate()}!');
-//hi 
+// print('Hello world: ${first_class.calculate()}!');
 
 //  git commit -m "first pro"
 //  git push -u origin main
@@ -122,9 +141,8 @@ print(data);
   ///void and null
   //void is not null there is not exitecd but can be too
   //null is not existed anymore
-
-///it never can be null
-// print( ab! );
+  ///it never can be null
+  // print( ab! );
 
 ///print test
 //  print('test');
@@ -173,10 +191,6 @@ print(data);
   
 //   List.generate(3, (j) => i + j)});
 
-
-
-
-
 // var m1 =  List.generate(3, (i) =>{ 
   
 //    'm' ,
@@ -212,9 +226,6 @@ print(data);
 
 // int a = 2;
 
-
-
-
 //  print(myMap.values);
 
 
@@ -237,10 +248,6 @@ print(data);
 // List numbers = [1, 2, 6, 7];
 // Map myMap = {'name' : 'mahsa' , 'age' : '23'};
 
-
-
-
-
 // numbers.forEach(print);
 // myMap.forEach((key,value){
 
@@ -254,27 +261,16 @@ print(data);
 
 // });
 
+////////////////list of map
+// List<Map> students = [{'name' : 'mahsa' , 'age' : '23'},{'name' : 'mahsa' , 'age' : '23'}];
 
-List<Map> students = [{'name' : 'mahsa' , 'age' : '23'},{'name' : 'mahsa' , 'age' : '23'}];
+// for(var i = 0 ; i<students.length ; i++){
+//     if(students[i]['name']=='mahsa' && students[i]['age'] == '23'){
+//       print('hi mahsa');
 
-
-for(var i = 0 ; i<students.length ; i++){
-    if(students[i]['name']=='mahsa' && students[i]['age'] == '23'){
-      print('hi mahsa');
-
-
-
-
-    }
-
-
-}
-
-// for(int i = 0 ; i<students.length ; i++){
-    
+//     }
 
 // }
-
 
 // for (var i in students) {
   
@@ -291,8 +287,7 @@ for(var i = 0 ; i<students.length ; i++){
     // }
   // });
 
-
-
+/////////////////////inheritence getter and setter
 // SuperClass superClass = SuperClass();
 // print(superClass.name);
 
@@ -301,40 +296,47 @@ for(var i = 0 ; i<students.length ; i++){
 // superClass.age = 10;
 // print(superClass.age);
 
-//////second class
+
+// Animal animal = Animal(name : 'hen');
+// print(animal.name);
+
+// Bird bird = Bird('kaftar');
+// print(bird);
+
+
+// Sparrow sparrow = Sparrow(name: 'sparrow');
+// print(sparrow.name);
+
+
+
 
     
 
 }
 
+
+////////cascade maps
 // final firstMap = {"1":"2"};
 // final secondMap = {"2":"3"};
-
 // final thirdMap = {
 //    ...firstMap,
 //    ...secondMap,
 // };
 
-
+///////define function
 //function default return dynamic
 //  function1('a ', name: 'mahsa');
-
 // }
 
 // function(String a , {String? name}){
 //   return '';
-
-
 // }
 
 // var m1 = ()=>{
-
 // }
 
 // function1(String a , {required String  name}){
 //   return '';
-
-
 // }
 
 
