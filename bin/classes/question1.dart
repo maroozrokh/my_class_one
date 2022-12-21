@@ -1,5 +1,3 @@
-import 'dart:html';
-
 class Data{
 
 String? name,id,userName;
@@ -28,16 +26,23 @@ factory Data.myData({Map<String,dynamic>? json}){
 
 }
 
+////in extended classs you can not to describe super for child class
 
 class EmptyData extends Data{
 
     String? empty;
-    EmptyData(this.empty) : super();
+    EmptyData(this.empty) ;
 
     factory EmptyData.emptyData({ Map<String,dynamic>? json}){
         return EmptyData(json?['empty']);
     }
 
+
+    @override
+  String toString() {
+    // TODO: implement toString
+    return 'Data{empty : $empty }';
+  }
 
 
 }

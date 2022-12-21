@@ -237,6 +237,10 @@ print(data);
 // List numbers = [1, 2, 6, 7];
 // Map myMap = {'name' : 'mahsa' , 'age' : '23'};
 
+
+
+
+
 // numbers.forEach(print);
 // myMap.forEach((key,value){
 
@@ -251,8 +255,20 @@ print(data);
 // });
 
 
-// List<Map> students = [{'name' : 'mahsa' , 'age' : '23'},{'name' : 'ali' , 'age' : '23'}];
+List<Map> students = [{'name' : 'mahsa' , 'age' : '23'},{'name' : 'mahsa' , 'age' : '23'}];
 
+
+for(var i = 0 ; i<students.length ; i++){
+    if(students[i]['name']=='mahsa' && students[i]['age'] == '23'){
+      print('hi mahsa');
+
+
+
+
+    }
+
+
+}
 
 // for(int i = 0 ; i<students.length ; i++){
     
