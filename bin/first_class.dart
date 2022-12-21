@@ -1,8 +1,4 @@
-// import 'dart:html_common';
-
-import 'package:first_class/first_class.dart' as first_class;
-
-
+// import 'package:first_class/first_class.dart' as first_class;
 import 'classes/aniamal.dart';
 import 'super_class.dart';
 import 'second_class.dart';
@@ -30,11 +26,12 @@ void main(List<String> arguments) {
 
 
 ///////Q1
-  Map map22 = {'age' : 20 , 'id':123};
-  Map map11 = {};
+  Map<String,dynamic> haveData = {'name' : 'mahsa' , 'userName': 'roozrokh','id':123};
+  Map<String,dynamic> noData = {'empty' : 'empty'};
 
-Mydata  mydata = Mydata(map11);
-print(mydata);
+
+Data data = Data.myData(json : noData);
+print(data);
    
 
 

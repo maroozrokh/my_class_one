@@ -1,37 +1,46 @@
+import 'dart:html';
 
-// class Mydata {
+class Data{
 
+String? name,id,userName;
 
-// String? name;
-// String? id;
-// String? username;
+Data({this.name,this.userName,this.id});
 
+factory Data.myData({Map<String,dynamic>? json}){
+    if(json?['name'] == null){
+      return EmptyData.emptyData(json: json);
 
-// Mydata({this.name,this.id,this.username});
+    }else{
+      return Data(
 
-// factory Mydata.myData({Map<String,dynamic> json}){
-//   if(json?['name'] == null)
-// {
-//   return EmptyData.emdata(json : json);
-// }
-// }else{
-// return(Mydata.myData({Map<String,dynamic> json}));
+        name : json?['name'], userName: json?['userName'] , id: json?['id']
 
-// }
+      );
+    }
 
+    }
 
+    @override
+  String toString() {
+    // TODO: implement toString
+    return 'Data{name : $name , userName: $userName , id: $id}';
+  }
 
-// }
-
-
-// class EmptyData{
-
-// factory EmptyData.emdata({Map<String,dynamic> json}){
-
-//   return EmptyData{
-
-//   }
+}
 
 
+class EmptyData extends Data{
 
-// }
+    String? empty;
+    EmptyData(this.empty) : super();
+
+    factory EmptyData.emptyData({ Map<String,dynamic>? json}){
+        return EmptyData(json?['empty']);
+    }
+
+
+
+}
+
+
+
