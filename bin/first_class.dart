@@ -10,6 +10,8 @@ import 'classes/my_extention.dart';
 import 'classes/class_dart.dart'as class2;
 import 'classes/class_dart1.dart'as class1;
 import 'post/post.dart';
+import 'dart:convert' as decode;
+
 import 'package:http/http.dart' as http;
 
 
@@ -19,15 +21,26 @@ enum Enum1 {buy,sell,outOf}
 
 
 
-Future _future () async {
+// Future _future () async {
 
-Duration duration = Duration(seconds: 3);
-return await Future.delayed(duration);
+// Duration duration = Duration(seconds: 3);
+// return await Future.delayed(duration);
 
+// }
 
+var url = Uri.parse('https://jsonplaceholder.typicode.com/posts');
+   Future<Post> _fetchPost() async{ 
+     var response = await http.get(url);
+      if(response.statusCode == 200){
+    var myJson = decode.jsonDecode(response.body);
+    print(myJson);
+    return Post.fromJson(myJson);
 
+  }else{
+    throw Exception('error');
+  }
 
-}
+  }
 void main(List<String> arguments) async{
 
 /////async awiat
@@ -39,9 +52,13 @@ void main(List<String> arguments) async{
 // _future().then((value) => print('value'));
 
 
+_fetchPost().then((value) => print('object'));
+
 //////same name in classes we use as when we import classes
 // class1.ClassDart(1,'m');
 // class2.ClassDart(1);
+
+
 
 
 
@@ -59,21 +76,29 @@ void main(List<String> arguments) async{
 
 ///
 ///
-Map<String,dynamic> map = {"userId": 1,"id": 2,"title": "qui est esse",
-"body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
-};
+  var url = Uri.parse('https://jsonplaceholder.typicode.com/posts');
+ 
+  var response = await http.get(url);
+  if(response.statusCode == 200){
+
+    var myJson = decode.jsonDecode(response.body);
+  print(myJson);
+  Post.fromJson(myJson);
+
+  }else{
+
+  print(response.statusCode);
+
+  }
+
+
+  
  
 //  post.myHttp();
 
-  var url = Uri.https('jsonplaceholder.typicode.com','/posts');
-  var response = await http.get(url);
-  // print(response.body);
-//  print(response.body);
-  // Post post =Post.myPost(json: response.body);
-  // print(await http.read(Uri.https('https://jsonplaceholder.typicode.com/post', 'post.txt')));
+  
 
-
-print("object");
+// print("object");
 
 
 
