@@ -84,7 +84,7 @@ abstract class Birds implements FourLegs,BallDararn{
 ///mixin have feature of normal class and abstract class
 ///mixin dose not have constructor
 ///we can not call mixin or create object from it
-
+///nullable field cant come with constractor without elements
 
 mixin ParPar{
     void walk(){
