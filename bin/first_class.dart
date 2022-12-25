@@ -4,15 +4,46 @@ import 'classes/my_extention.dart';
 import 'classes/new_animal.dart';
 import 'classes/question2.dart';
 import 'super_class.dart';
-import 'second_class.dart';
-import 'classes/question1.dart';
+import 'second_class.dart' ;
+import 'classes/question1.dart' ;
 import 'classes/my_extention.dart';
+import 'classes/class_dart.dart'as class2;
+import 'classes/class_dart1.dart'as class1;
+import 'post/post.dart';
+import 'package:http/http.dart' as http;
+
 
 ///enum are stable
 enum EnumName {buy,sell,outOf}
 enum Enum1 {buy,sell,outOf}
 
-void main(List<String> arguments) {
+
+
+Future _future () async {
+
+Duration duration = Duration(seconds: 3);
+return await Future.delayed(duration);
+
+
+
+
+}
+void main(List<String> arguments) async{
+
+/////async awiat
+///
+// print('loading');
+// await Future.delayed(Duration(seconds: 3),()=>print('fetching'));
+// print('loaded');
+
+// _future().then((value) => print('value'));
+
+
+//////same name in classes we use as when we import classes
+// class1.ClassDart(1,'m');
+// class2.ClassDart(1);
+
+
 
 
 
@@ -24,6 +55,25 @@ void main(List<String> arguments) {
   // Map<String,dynamic> noData = {'empty' : 'empty'};
   // Data data = Data.myData(json : noData);
   // print(data);
+
+
+///
+///
+Map<String,dynamic> map = {"userId": 1,"id": 2,"title": "qui est esse",
+"body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
+};
+ 
+//  post.myHttp();
+
+  var url = Uri.https('jsonplaceholder.typicode.com','/posts');
+  var response = await http.get(url);
+  // print(response.body);
+//  print(response.body);
+  // Post post =Post.myPost(json: response.body);
+  // print(await http.read(Uri.https('https://jsonplaceholder.typicode.com/post', 'post.txt')));
+
+
+print("object");
 
 
 
@@ -46,12 +96,12 @@ void main(List<String> arguments) {
 // print(myInt.fancyInt);
 // myInt.changeIntPlus5();
 
-10.changeIntPlus5();
-'flutter'.stringLenght();
-'10.3'.strToDouble();
-'10'.strToInt();
-List list = [12,12,34,456,67,87,98];
-list.listCheck();
+// 10.changeIntPlus5();
+// 'flutter'.stringLenght();
+// '10.3'.strToDouble();
+// '10'.strToInt();
+// List list = [12,12,34,456,67,87,98];
+// list.listCheck();
    
 
 
@@ -306,6 +356,9 @@ list.listCheck();
 
 // Sparrow sparrow = Sparrow(name: 'sparrow');
 // print(sparrow.name);
+
+/////date time
+//  DateTime _date = DateTime.now();
 
 
 
